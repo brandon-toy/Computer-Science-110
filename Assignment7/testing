@@ -1,0 +1,14 @@
+public class testing {
+String barb = "BARBARA";
+scramble(barb);
+System.out.println(barb);
+The	method	scramble	is	defined	as	follows:
+public static String scramble(String str) {
+ if (str.length() >= 2){
+ int n = str.length() / 2;
+ str = scramble(str.substring(n)) +
+str.substring(0, n);
+ }
+ return str;
+}
+}
